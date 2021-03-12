@@ -6,16 +6,18 @@ dk = [-1, 0, 1]
 matrix = []
 
 for i in range(row):
+    line=[]
     for j in range(col):
-        matrix.append(0)
+        line.append(0)
+    matrix.append(line)
 
 for i in range(mine):
     while True:
         x = r.randint(0, row-1)
         y = r.randint(0, col-1)
         if matrix[x][y] == 0:
+            matrix[x][y] = '*'
             break
-        matrix[x][y] = '*'
 
 
 for i in range(row):

@@ -1,12 +1,5 @@
 from Python.Data_structure.ADT_LinkedStructure import LinkedList
 
-                    """def merge(self, listB):
-                        if (type(listB) == type(self)):
-                            while not listB.isEmpty():
-                                self.insert(self.size(), listB.getEntry(0))
-                                listB.delete(0)
-                        else:
-                            return False"""
 ll1 = LinkedList()
 ll2 = LinkedList()
 
